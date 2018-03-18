@@ -11,13 +11,18 @@
     </div>
   <% end %>
 
+ <div class="field">
+    <%= form.label :レポート番号 %>
+    <%= form.text_field :report_number, id: :diary_report_number %>
+  </div>
+
   <div class="field">
-    <%= form.label :title %>
+    <%= form.label :レポートタイトル %>
     <%= form.text_field :title, id: :diary_title %>
   </div>
 
   <div class="field">
-    <%= form.label :body %>
+    <%= form.label :レポート %>
     <%= form.text_area :body, id: :diary_body %>
   </div>
 

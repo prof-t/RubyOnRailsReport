@@ -69,6 +69,6 @@ class DiariesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def diary_params
-      params.require(:diary).permit(:title, :body)
+        params.require(:diary).permit(:title, :body, :report_number)
     end
 end

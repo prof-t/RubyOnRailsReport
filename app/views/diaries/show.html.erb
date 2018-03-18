@@ -1,8 +1,10 @@
+<h1>レポート閲覧</h1>
+
 <p id="notice"><%= notice %></p>
 
 <p>
-	<strong>ID:</strong>
-	<%= @diary.id %>
+	<strong>レポート番号:</strong>
+	<%= @diary.report_number %>
 </p>
 
 <p>
@@ -16,15 +18,10 @@
 </p>
 
 <p>
-	<strong>登録日時:</strong>
-	<%= @diary.created_at %>
-</p>
-
-<p>
 	<strong>更新日時:</strong>
 	<%= @diary.updated_at %>
 </p>
 
-<%= link_to '編集', edit_diary_path(@diary) %> |
+<%= link_to 'レポート編集', edit_diary_path(@diary) %> |
 <%= link_to "削除", @diary, method: :delete, data: { confirm: "本当に削除しますか？" } %> |
 <%= link_to '一覧に戻る', diaries_path %>
